@@ -33,7 +33,7 @@ const submit = () => {
 <template>
   <div class="add-blog my-5 mx-auto max-w-500px">
     <h2 class="text-center text-3xl my-5 dark:text-gray-200">Add a new blog</h2>
-    <form v-if="!submitted">
+    <form v-if="!submitted" class="px-10 md:px-0">
       <p class="mt-10 mb-1 dark:text-gray-200">title :</p>
       <input
         type="text"
