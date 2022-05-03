@@ -38,7 +38,7 @@ const submit = () => {
       <input
         type="text"
         v-model="blog.title"
-        class="w-full block p-2 dark:bg-dark-900"
+        class="w-full block p-2 dark:(bg-dark-900 text-gray-200)"
       />
 
       <p class="mt-10 mb-1 dark:text-gray-200">body :</p>
@@ -46,7 +46,7 @@ const submit = () => {
         v-model="blog.content"
         cols="30"
         rows="10"
-        class="w-full px-2 dark:bg-dark-900"
+        class="w-full px-2 dark:(bg-dark-900 text-gray-200)"
       ></textarea>
 
       <p class="mt-5 dark:text-gray-200">categories :</p>
@@ -57,7 +57,7 @@ const submit = () => {
             v-model="blog.categories"
             type="checkbox"
             value="video games"
-            class="dark:bg-dark-900"
+            class="dark:bg-dark-900 dark:text-gray-200"
           />
         </div>
         <div class="flex space-x-2 items-center">
@@ -84,7 +84,7 @@ const submit = () => {
         <option
           v-for="author of authors"
           :key="author"
-          class="dark:text-gray-200 dark:bg-dark-900"
+          class="dark:text-gray-200 dark:(bg-dark-900  text-gray-200)"
         >
           {{ author }}
         </option>

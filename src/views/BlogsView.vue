@@ -25,7 +25,7 @@ const cutContent = (paragraph: string) => paragraph.slice(0, 200) + " . . ."
       autofocus
       v-model="searchedBlog"
       type="search"
-      class="w-full h-10 outline-none border-2 border-rose-500 caret-rose-500 px-2 dark:bg-dark-900"
+      class="w-full h-10 outline-none border-2 border-rose-500 caret-rose-500 px-2 dark:(bg-dark-900 text-gray-200)"
     />
     <transition mode="out-in" name="fade">
       <transition-group tag="div" v-if="filteredBlogs.length" name="blog-group">
