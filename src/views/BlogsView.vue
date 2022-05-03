@@ -20,7 +20,7 @@ const cutContent = (paragraph: string) => paragraph.slice(0, 200) + " . . ."
 </script>
 
 <template>
-  <main class="blogs-view mx-auto my-0 max-w-800px mt-14">
+  <main class="blogs-view mx-auto my-0 max-w-800px mt-14 px-5 md:px-0 ">
     <input
       autofocus
       v-model="searchedBlog"

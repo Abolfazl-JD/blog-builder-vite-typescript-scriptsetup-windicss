@@ -31,9 +31,9 @@ const submit = () => {
 </script>
 
 <template>
-  <div class="add-blog my-5 mx-auto max-w-500px">
+  <div class="add-blog my-5 mx-auto max-w-500px px-5 md:px-0">
     <h2 class="text-center text-3xl my-5 dark:text-gray-200">Add a new blog</h2>
-    <form v-if="!submitted" class="px-10 md:px-0">
+    <form v-if="!submitted">
       <p class="mt-10 mb-1 dark:text-gray-200">title :</p>
       <input
         type="text"
