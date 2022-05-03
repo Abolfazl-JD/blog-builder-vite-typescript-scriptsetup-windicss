@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { computed, ref } from "vue"
 import { blogData } from "../stores/mainData"
+// components
+import NotFound from "@/components/NotFound.vue"
+// stores
 import type { Blog } from "../types"
 const appStore = blogData()
 
@@ -54,9 +57,7 @@ const cutContent = (paragraph: string) => paragraph.slice(0, 200) + " . . ."
           <p class="mt-5 dark:text-gray-300">{{ cutContent(blog.content) }}</p>
         </div>
       </transition-group>
-      <h3 v-else class="text-gray-800 mt-10 text-center">
-        No such a blog was found
-      </h3>
+      <NotFound v-else />
     </transition>
   </main>
 </template>

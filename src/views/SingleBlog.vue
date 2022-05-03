@@ -5,6 +5,8 @@ import { useRoute } from "vue-router"
 import type { Blog } from "../types"
 // stores
 import { blogData } from "../stores/mainData"
+// components
+import NotFound from "@/components/NotFound.vue"
 
 const appStore = blogData()
 
@@ -38,4 +40,5 @@ onMounted(() => {
       author : {{ singleBlog.author }}
     </p>
   </div>
+  <NotFound v-else />
 </template>
