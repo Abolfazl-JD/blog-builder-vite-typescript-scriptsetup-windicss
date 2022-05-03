@@ -70,7 +70,7 @@ const showResponsiveMenu = ref(false)
       </div>
     </nav>
     <ul
-      class="w-full bg-blue-700 flex flex-col px-4 text-white transition-all ease duration-200 md:hidden"
+      class="w-full absolute z-50 bg-blue-700 flex flex-col px-4 text-white transition-all ease duration-200 md:hidden"
       :class="showResponsiveMenu ? 'h-20 py-2' : 'h-0 overflow-hidden'"
     >
       <RouterLink class="border-b border-b-blue-600 pb-2" to="/add-blog"
